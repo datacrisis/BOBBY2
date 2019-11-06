@@ -10,9 +10,8 @@ import torch
 from torchvision import models
 
 
-class BOBBY2(nn.Module):
+class BOBBY2(torch.nn.Module):
     
-
     def __init__(self,batch_size,action_size):
         super(BOBBY2,self).__init__()
         
@@ -23,21 +22,22 @@ class BOBBY2(nn.Module):
         
         #Setup new net
         alex = models.alexnet(pretrained=True)
-        self.FE_scene = nn.Sequential(*list(alex.children())[:1])
+        self.FE_exem = torch.nn.Sequential(*list(alex.children())[:1]) #Deprecated
+        self.FE_scene = torch.nn.Sequential(*list(alex.children())[:1])
 
 
-        self.Mixer = nn.Sequential(nn.Dropout2d(0.5),
-                                   nn.Conv2d(1280,256,1,1),
-                                   nn.ReLU(True))
+        self.Mixer = torch.nn.Sequential(torch.nn.Dropout2d(0.5),
+                                   torch.nn.Conv2d(1280,256,1,1),
+                                   torch.nn.ReLU(True))
 
         #Classifier  
-        self.Classifier = nn.Sequential(nn.Linear(9216,2000),
-                                        nn.Dropout(0.5),
-                                        nn.ReLU(True),
-                                        nn.Linear(2000,500),
-                                        nn.Dropout(0.5),
-                                        nn.ReLU(True),
-                                        nn.Linear(500,self.action_size))
+        self.Classifier = torch.nn.Sequential(torch.nn.Linear(9216,2000),
+                                        torch.nn.Dropout(0.5),
+                                        torch.nn.ReLU(True),
+                                        torch.nn.Linear(2000,500),
+                                        torch.nn.Dropout(0.5),
+                                        torch.nn.ReLU(True),
+                                        torch.nn.Linear(500,self.action_size))
 
 
 
