@@ -32,7 +32,7 @@ Download the model from our paper: https://drive.google.com/open?id=1xaGH5k7SMB_
 - - - -
 ### Getting started
 
-[ **Tracking on GOT-10k** ] <br />
+**Tracking on GOT-10k**  <br />
 *Perform tracking with our pre-trained model on the GOT-10k without training.*
   1. Check and fulfill pre-requisites.
   2. Clone the repository.
@@ -43,7 +43,7 @@ Download the model from our paper: https://drive.google.com/open?id=1xaGH5k7SMB_
      python demo_got10k.py -dt sequence -id some_id -m weights -v True
      ```
 
- [ **Training and tracking** ] <br />
+ **Training and tracking** <br />
  *Start here to train your own network.*
   1. Check and fulfill pre-requisites.
   2. Clone the repository.
