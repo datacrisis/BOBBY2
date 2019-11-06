@@ -58,16 +58,16 @@ Download the model from our paper: https://drive.google.com/open?id=1xaGH5k7SMB_
 
 ### Notes on ImageNet-VID Tweak for Training
 
-<p align="justify">
+<justify>
 Due to the unique buffer module, custom generation of positive-negative samples and the way the sample fetching mechanism was implemented, the csv files in `ilsvrc_csv` will be needed for training. If you would like to train as we did, modify the default ImageNet-VID dataset exactly in accordance to the csv files.
 
 `ilsvrc_csv` contains 2 directory - `ilsvrc_train_csv` and `ilsvrc_val_csv`. Each of the directory in turn contains 4 csv files used by the custom dataset class in `data_utils` for training. The csv files are used to dynamically generate negative samples and fetches the proper -negative-positive sample as needed by the training sequence. Check the docstring in `data_utils` for more info on the individual csv. **Note that you will have to parse and modify the individual path entries in the csv to match your own setup for it to work.**
-</p>
+</justify>
 
 ### Demo on Webcam
 [To be implemented]
 
-
+- - - -
 ### License
 Licensed under MIT license.
 
