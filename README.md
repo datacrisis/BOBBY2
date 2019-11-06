@@ -20,6 +20,7 @@ This is an original implementation of BOBBY2 with the research source-code.
 - numpy
 - pillow
 - lr finder (for training only; credits to David Silva https://github.com/davidtvs/pytorch-lr-finder)
+- onecycle lr (for training only; credits to Nachiket Tanksale https://github.com/nachiket273/One_Cycle_Policy)
 
 ## Getting started
 
