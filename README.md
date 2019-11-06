@@ -26,9 +26,9 @@ This is an original implementation of BOBBY2 with the research source-code.
 
 [ **Tracking only** ] <br />
 *Perform tracking with our pre-trained model without training.*
-  1. Contrary to popular belief, Lorem Ipsum is not simply random text
+  1. Check and fulfill pre-requisites.
   2. Clone the repository.
-  3. Contrary to popular belief, Lorem Ipsum is not simply random text
+  3. Download the pretrained model from the link in the next section.
   4.Contrary to popular belief, Lorem Ipsum is not simply random text
   5. Contrary to popular belief, Lorem Ipsum is not simply random text
   6. Contrary to popular belief, Lorem Ipsum is not simply random text
@@ -43,6 +43,7 @@ This is an original implementation of BOBBY2 with the research source-code.
   6. Contrary to popular belief, Lorem Ipsum is not simply random text
   7. Contrary to popular belief, Lorem Ipsum is not simply random text (`abc/bac/`).
   8. Contrary to popular belief, Lorem Ipsum is not simply random text
+
 
 ## Pretrained Model
 
