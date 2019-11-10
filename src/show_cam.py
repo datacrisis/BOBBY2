@@ -8,6 +8,11 @@ from PIL import Image, ImageDraw
 from net import BOBBY2
 
 
+#Setup interface. [Unfinished Impe
+parser = argparse.ArgumentParser(description='BOBBY2 Tracking Demo on GOT-10k')
+parser.add_argument('-m','--model', default='../weights/bobby2.pth',help='path to trained model')
+args = parser.parse_args()
+
 #Tracker class
 class BBY2_Tracker(object):
     
